@@ -1,23 +1,19 @@
-package week1.day2;
+package week3.day2;
 
 public class Browser {
 
-	String launchBrowser(String browserName)
-	{
-		System.out.println("Browser Launched Successfully");
-		return browserName;
-		
-		
-	}
+	String browserName;
+	int browserVersion;
 	
-	void loadUrl(){
-		System.out.println("Application url loaded successfully");
+	public void  openURL()
+	{
+		System.out.println("URL is opened --> super class");
 	}
-	public static void main(String[] args) {
-		Browser b = new Browser();
-		
-		System.out.println(b.launchBrowser("Chrome"));
-		b.loadUrl();
+	public void  closeBrowser() {
+		System.out.println("Browser is closed --> super class");
+	}	
+	public void navigateBack()
+	{
+		System.out.println("Navigated back --> super class");
 	}
-
 }
